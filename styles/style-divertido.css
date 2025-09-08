@@ -1,0 +1,37 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+h1, p{
+  font-family: "Poppins", sans-serif;
+  color: #ff5722;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+
+button {
+  background: linear-gradient(90deg, #ff4081, #7c4dff);
+  border: none;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #7c4dff, #ff4081);
+  transform: translateY(-3px);
+}
+
+
+button:active {
+  background: #34495e;
+  transform: translateY(0);
+}

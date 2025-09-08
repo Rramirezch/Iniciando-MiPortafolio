@@ -1,0 +1,182 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --color-primario: #22fda2;
+    --color-secundario: #7046e4;
+    --color-terciario: #161111;
+    --color-cuartario: #76a54a;
+    --color-quinto: #ffffff;
+
+    --font-principal: 'Asap', sans-serif;
+    --font-secundaria: 'Krona One', sans-serif;
+}
+body {
+    background-color: var(--color-terciario);
+    color: var(--color-quinto);
+    box-sizing: border-box;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 38%;
+}
+.header_navegacion_link {
+    font-size: 1.1rem;
+    color: var(--color-primario);
+    margin: 0 10px;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-right: 100px;
+}
+.header_navegacion_link:hover {
+    background-color: var(--color-secundario);
+    color: var(--color-terciario);
+    transition: 0.3s;
+    border-radius: 8px;
+}
+.titulo-destaque {
+    color: var(--color-primario);
+}
+.presentacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3% 5%;
+}
+.presentacion_contenido {
+    width: 50%;
+    margin-right: 7%;
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+.presentacion_contenido_titulo {
+    font-size: 1.8rem;
+    font-family: "Krona One", sans-serif;
+    text-align: justify;
+}
+#titulo2 {
+    text-align: center;
+    color: #76a54a;
+}
+.presentacion_contenido_texto {
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    text-align: justify;
+}
+.presentacion_enlaces {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    margin-top: 20px;
+}
+.presentacion_enlaces_subtitulo {
+    font-size: 1.15rem;
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    margin-bottom: -10px;
+}
+#alura{
+    color: var(--color-primario);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.6rem;
+    font-family: "Montserrat", sans-serif;
+}   
+.presentacion_enlaces_link {
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+   text-align: center;
+   padding: 21.5px 0;
+    border-radius: 8px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-quinto);
+    border: 1.5px solid var(--color-primario);
+    box-shadow: 0px 4px 4px rgba(250, 248, 248, 0.25);
+}
+.presentacion_enlaces_link:hover {
+    background-color: var(--color-secundario);
+    color: var(--color-terciario);
+    transition: 0.3s;
+    border: solid 1.5px wheat;
+}
+.footer {
+    font-size: 0.8rem;
+    margin-top: 1.4rem;
+    background-color: var(--color-primario);
+    color: var(--color-terciario);
+    text-align: center;
+    padding: 10px 0;
+    font-family: "Asap", sans-serif;
+    bottom: 0;
+    width: 100%;
+}
+#correo{
+    color: rgb(14, 60, 223);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.85rem;
+    font-family: "Montserrat", sans-serif;
+}
+span{
+    color: rgb(14, 60, 223);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.85rem;
+    font-family: "Montserrat", sans-serif;
+}
+address{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    color: var(--color-terciario);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.85rem;
+    font-family: "Montserrat", sans-serif;
+}
+.presentacion_img {
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 45%;
+}
+
+@media (max-width: 768px) {
+    .presentacion {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    .presentacion_contenido {
+        width: 95%;
+        margin: 0;
+    }
+    .presentacion_img {
+        width: 80%;
+        margin-top: 20px;
+    }
+    .header {
+        flex-direction: column;
+        gap: 15px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .header_navegacion_link {
+        margin-right: 0;
+    }
+}
+    
